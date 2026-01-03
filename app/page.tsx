@@ -1,23 +1,26 @@
+import Header from "./components/header";
+
 export default function Home() {
     return (
         <main
             id="scroll-container"
-            className="h-screen overflow-y-auto scroll-smooth snap-y snap-mandatory"
+            className="h-screen overflow-y-auto scroll-smooth snap-y snap-mandatory md:ml-70"
         >
             <section
                 id="dev"
                 className="h-screen snap-start pt-1.5"
             >
-                <h1 className="text-4xl uppercase tracking-[1rem]">
+                <h1 className="md:text-4xl uppercase tracking-[1rem] md:-ml-70 ">
                     developpeur full stack
                 </h1>
+                <Header />
             </section>
 
             <section
                 id="projets"
                 className="h-screen snap-start pt-1.5"
             >
-                <h2 className="text-2xl uppercase tracking-[1rem]">
+                <h2 className="md:text-2xl uppercase tracking-[1rem]">
                     mes projets
                 </h2>
             </section>
@@ -26,7 +29,7 @@ export default function Home() {
                 id="technos"
                 className="h-screen snap-start pt-1.5"
             >
-                <h2 className="text-2xl uppercase tracking-[1rem]">
+                <h2 className="md:text-2xl uppercase tracking-[1rem]">
                     les technos
                 </h2>
             </section>
@@ -35,7 +38,14 @@ export default function Home() {
                 id="contact"
                 className="h-screen snap-start pt-1.5"
             >
-                <h2 className="text-2xl uppercase tracking-[1rem]">contact</h2>
+                <h2 className="md:text-2xl uppercase tracking-[1rem]">
+                    contact
+                </h2>{" "}
+                <footer className="b-0">
+                    <p className="text-center text-sm py-5">
+                        © 2024 Julien Deniau. Tous droits réservés.
+                    </p>
+                </footer>
             </section>
         </main>
     );

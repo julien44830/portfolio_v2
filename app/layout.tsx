@@ -34,9 +34,9 @@ export default function RootLayout({
                 <div
                     aria-hidden="true"
                     className="
-          pointer-events-none fixed inset-0 -z-10
-          bg-[linear-gradient(135deg,var(--bg-0),var(--bg-1)_45%,#001d18_70%,var(--bg-0))]
-        "
+                                pointer-events-none fixed inset-0 -z-10
+                                bg-[linear-gradient(135deg,var(--bg-0),var(--bg-1)_45%,#001d18_70%,var(--bg-0))]
+                                "
                 >
                     <div className="absolute inset-0 bg-[var(--bg-0)/40]" />
                 </div>
