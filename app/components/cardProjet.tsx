@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 type CardProjetProps = {
+    id: number;
     img: string;
     lien: string;
     desc: string;
@@ -8,19 +9,25 @@ type CardProjetProps = {
 };
 
 export default function CardProjet({
+    id,
     img,
     lien,
     desc,
     title,
 }: CardProjetProps) {
+    console.log("%c⧭", "color: #ff0000", id);
     return (
         <div
-            className="
-        flex h-130 max-w-sm flex-col
-        rounded-2xl bg-white/5 p-6
-        backdrop-blur-xl
-        shadow-[0_20px_80px_rgba(0,0,0,0.35)]
-      "
+            className={`
+            flex flex-col
+            shrink-0
+            w-[85vw] max-w-90
+            md:w-95
+            rounded-2xl bg-white/5 p-6
+            backdrop-blur-xl
+            shadow-[0_20px_80px_rgba(0,0,0,0.35)]
+            ml-6
+            `}
         >
             {/* Header */}
             <div>
@@ -29,14 +36,14 @@ export default function CardProjet({
                 <Image
                     src={img}
                     alt={`Aperçu du projet ${title}`}
-                    width={400}
-                    height={250}
-                    className="rounded-lg object-cover"
+                    width={800}
+                    height={500}
+                    className="w-full rounded-lg object-cover"
                 />
             </div>
 
             {/* Description */}
-            <p className="mt-4 text-white/80 line-clamp-4">{desc}</p>
+            <p className="mt-4 line-clamp-4 text-white/80">{desc}</p>
 
             {/* CTA toujours en bas */}
             <a

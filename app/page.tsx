@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <main
             id="scroll-container"
-            className="h-screen overflow-y-auto scroll-smooth snap-y snap-mandatory md:ml-70"
+            className="h-screen overflow-y-auto scroll-smooth snap-y snap-mandatory md:ml-70 [scrollbar-width:none]"
         >
             <section
                 id="dev"
@@ -25,7 +25,7 @@ export default function Home() {
                 <h2 className="md:text-2xl uppercase tracking-[1rem]">
                     mes projets
                 </h2>
-                <article className="h-11/12  flex items-center gap-10">
+                <article className="h-11/12 flex items-center ">
                     <ProjectsCarousel projets={projets} />{" "}
                 </article>
             </section>
