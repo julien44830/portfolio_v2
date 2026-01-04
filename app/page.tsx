@@ -1,4 +1,6 @@
 import Header from "./components/header";
+import ProjectsCarousel from "./components/ProjectsCarousel";
+import { projets } from "./src/data/data";
 
 export default function Home() {
     return (
@@ -23,6 +25,9 @@ export default function Home() {
                 <h2 className="md:text-2xl uppercase tracking-[1rem]">
                     mes projets
                 </h2>
+                <article className="h-11/12  flex items-center gap-10">
+                    <ProjectsCarousel projets={projets} />{" "}
+                </article>
             </section>
 
             <section
