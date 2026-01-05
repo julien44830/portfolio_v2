@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Menu from "./components/menu";
+import SignatureConsole from "./components/signatureConsole";
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -31,6 +32,7 @@ export default function RootLayout({
             className={cyform.variable}
         >
             <body>
+                <SignatureConsole />
                 <div
                     aria-hidden="true"
                     className="

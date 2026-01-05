@@ -15,7 +15,6 @@ export default function CardProjet({
     desc,
     title,
 }: CardProjetProps) {
-    console.log("%c⧭", "color: #ff0000", id);
     return (
         <div
             className={`
