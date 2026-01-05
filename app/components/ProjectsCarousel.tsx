@@ -139,16 +139,16 @@ export default function ProjectsCarousel({ projets }: Props) {
         <div
             ref={scrollerRef}
             className="
-    flex gap-8 justify-start
-    overflow-x-auto overflow-y-hidden
-    px-6 py-6
-    snap-x snap-mandatory scroll-smooth
-    [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
-    rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl
-    shadow-[0_20px_80px_rgba(0,0,0,0.35)]
-    w-full
-    md:max-w-11/12 md:mx-auto
-  "
+                flex gap-8 justify-start
+                overflow-x-auto overflow-y-hidden
+                px-6 py-6
+                snap-x snap-mandatory scroll-smooth
+                [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
+                rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl
+                shadow-[0_20px_80px_rgba(0,0,0,0.35)]
+                w-full
+                md:max-w-11/12 md:mx-auto
+            "
         >
             {projets.map((p) => (
                 <div
